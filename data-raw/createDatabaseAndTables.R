@@ -46,3 +46,4 @@ dbListTables(mydb)
 custReg <- dplyr::tbl(mydb, "custReg")
 
 view(custReg)
+DBI::dbDisconnect(mydb)
